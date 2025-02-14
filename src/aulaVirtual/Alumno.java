@@ -8,7 +8,7 @@ import java.util.Map;
  * Representa a un alumno del aula virtual.
  * Un alumno puede estar inscrito en varias asignaturas.
  */
-public class Alumno extends Usuario {
+public class Alumno extends Usuario {//Alumno va a heredar de Usuario
 
     private Map<Asignatura, Integer> notas;
 
