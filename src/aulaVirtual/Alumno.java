@@ -20,6 +20,14 @@ public class Alumno extends Usuario {//Alumno va a heredar de Usuario
     public Map<Asignatura, Integer> getNotas() {
         return new HashMap<>(notas);
     }
+    public void imprimirAlumno() {
+        System.out.println("Nombre del alumno: " + getNombre());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Asignaturas inscritas:");
+        for (Asignatura asignatura : getAsignaturas()) {
+            System.out.println("- " + asignatura.getNombre());
+        }
+    }
 
     protected void asignarNota(Asignatura asignatura, int nota) {
         if (getAsignaturas().contains(asignatura)) {
